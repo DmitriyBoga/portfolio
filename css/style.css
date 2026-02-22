@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(82, 82, 231);
+}
+
+header {
+  padding: 40px 0 0;
+}
+
+.nav {
+  background: transparent;
+}
+.nav .nav-inner {
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 20px white;
+  padding: 25px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.ul-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-text a:hover {
+  color: rgb(82, 82, 231);
+}
+
+.nav-text a:hover::after {
+  width: 100%;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.about {
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 20px white;
+  padding: 25px;
+  display: grid;
+  margin-bottom: 110px;
+  gap: 40px;
+}
+.about .about-h1 {
+  grid-column: 1/3;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.about .about-foto {
+  max-height: 500px;
+  grid-row: 2/4;
+}
+.about .about-foto img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.about-skills {
+  grid-column: 2;
+  grid-row: 2;
+}
+.about-skills h2 {
+  margin-bottom: 25px;
+}
+.about-skills .skills-block {
+  margin-bottom: 25px;
+}
+.about-skills .skills-block h3 {
+  margin-bottom: 15px;
+}
+.about-skills .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+.about-skills .skill {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.about-skills .skill.html {
+  background: #e34c26;
+}
+.about-skills .skill.css {
+  background: #264de4;
+}
+.about-skills .skill.scss {
+  background: #c69;
+}
+.about-skills .skill.js {
+  background: #f7df1e;
+  color: #000;
+}
+.about-skills .skill.react {
+  background: #61dafb;
+  color: #000;
+}
+.about-skills .skill.vite {
+  background: #646cff;
+}
+.about-skills .skill.git {
+  background: #f1502f;
+}
+
+.about-me {
+  margin-top: 80px;
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 20px;
+}
+
+.projects {
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 20px white;
+  padding: 25px;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+.projects-list h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.projects-list article {
+  background-color: #F0F8FF;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.projects-list article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.img-project {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.link-in-project {
+  margin-top: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgb(82, 82, 231);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.link-in-project:hover {
+  background: rgb(60, 60, 200);
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 80px 20px 40px;
+  background: rgb(60, 60, 200);
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.footer__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.footer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+.footer__copy {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*# sourceMappingURL=style.css.map */

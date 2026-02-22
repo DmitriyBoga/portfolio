@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-inner">
+                    <ul class="ul-nav">
+                        <li><a href="https://github.com/DmitriyBoga" class="logo-a"><img src="img/db-logo.svg" alt="Логотип" class="logo"></a></li>
+                        <div class="nav-menu">
+                            <li class="nav-text"><a href="#projects">Проекты</a></li>
+                            <li class="nav-text"><a href="#contacts">Контакты</a></li>
+                            <Li class="nav-text"><a href="">Резюме</a></Li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="about">
+                <h1 class="about-h1">Обо мне</h1>
+                <div class="about-foto">
+                    <img src="img/foto.jpg" alt="Мое фото" class="foto">
+                </div>
+                <div class="about-right">
+                    <div class="about-skills">
+                        <h2>Skills:</h2>
+                        <div class="skills-block">
+                            <h3>Frontend:</h3>
+                            <div class="skills-list">
+                                <span class="skill html">HTML</span>
+                                <span class="skill css">CSS</span>
+                                <span class="skill scss">SCSS</span>
+                                <span class="skill js">JavaScript</span>
+                                <span class="skill react">React</span>
+                            </div>
+                        </div>
+                        <div class="skills-block">
+                            <h3>Tools:</h3>
+                            <div class="skills-list">
+                                <span class="skill vite">Vite</span>
+                                <span class="skill git">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-me">
+                        <p>Я начинающий frontend-разработчик и студент факультета информационных технологий. Имею практический опыт разработки с использованием HTML, CSS, SCSS и базовый опыт работы с React. Использую Vite для сборки проектов. На данный момент работаю над учебными проектами и постоянно расширяю знания в области frontend-разработки, архитектуры приложений и современных веб-технологий. Стремлюсь получить позицию Intern Frontend Developer для получения практического опыта коммерческой разработки.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>Учебные проекты</h2>
+                <div class="projects-list">
+                    <article>
+                        <h3>Верстка по макету - CreateX-maket</h3>
+                        <div class="info-project">
+                            <img class="img-project" src="img/project1.png" alt="CreateX-maket">
+                            <p style="margin-bottom: 15px;">Адаптивная верстка многоcекционного сайта по готовому макету. Реализована семантическая HTML-разметка и структурированный CSS.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/CreateX-maket/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Верстка по макету - Whirl</h3>
+                        <div class="info-project">
+                            <img class="img-project" src="img/project2.png" alt="Whirl">
+                            <p style="margin-bottom: 15px;">Whirl - это одностраничный сайт (landing page), который я сверстал по готовому макету. Я использовал семантическую HTML-разметку и CSS для стилизации страницы. Для построения структуры применял Flexbox, аккуратно выстраивал отступы и выравнивание элементов.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/Whirl/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Игра "камень, ножницы, бумага"</h3>
+                        <div class="info-project">
+                            <img class="img-project" src="img/project3.png" alt="Камень ножницы бумага">
+                            <p style="margin-bottom: 15px;">Игра «Камень, ножницы, бумага» - это небольшой интерактивный проект, реализованный на чистом JavaScript. Пользователь выбирает один из вариантов, после чего компьютер случайным образом делает свой выбор, и определяется победитель.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/rock-scissors-paper/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Закрась цвета</h3>
+                        <div class="info-project">
+                            <img class="img-project" src="img/project4.png" alt="Закрась цвета">
+                            <p style="margin-bottom: 15px;">Проект «Закрась цвета» - это интерактивное веб-приложение, в котором пользователь может создавать сетку разного размера и закрашивать ячейки выбранным цветом или случайными цветами.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/Change-color/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>To do list на JS</h3>
+                        <div class="info-project">
+                            <img style="height: 170px;" class="img-project" src="img/project5.png" alt="To do in JS">
+                            <p style="margin-bottom: 15px;">В приложении можно добавлять новые задачи, отмечать их как выполненные и удалять. Все данные сохраняются в localStorage, поэтому список задач остается после перезагрузки страницы.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/To-Do-List-on-JS/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>To do list на React</h3>
+                        <div class="info-project">
+                            <img style="height: 175px;"  class="img-project" src="img/project6.png" alt="To do in React">
+                            <p style="margin-bottom: 15px;">В приложении реализовано добавление, удаление и отметка задач как выполненных. Также добавлена фильтрация задач (все, выполненные, активные) и отображение количества выполненных и оставшихся задач.</p>
+                            <a class="link-in-project" href="https://dmitriyboga.github.io/react-ToDo/" target="_blank">Демо</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="contacts" class="footer">
+        <div class="footer__container">
+            <h2 class="footer_title">Контакты</h2>
+        </div>
+        <div class="footer__links">
+            <a class="footer__link" href="mailto:dimka.bogatirev@yandex.ru">dimka.bogatirev@yandex.ru</a>
+            <a class="footer__link" href="https://t.me/dmitriy_bogt" target="_blank">Telegram</a>
+            <a class="footer__link" href="https://github.com/DmitriyBoga" target="_blank">GitHub</a>
+        </div>
+        <p class="footer__copy">
+            © 2026 Дмитрий Богатырев. Frontend Developer
+        </p>
+    </footer>
+</body>
+</html>
